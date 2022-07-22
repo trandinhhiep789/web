@@ -13,10 +13,10 @@ module.exports = {
   entry: "./src/index.js",
   mode: "development",
   output: {
-    path: path.join(__dirname, "/dist"),
+    path: path.join(__dirname, "dist"),
     filename: "[name].[contenthash].js", // setup caching cho web chạy nhanh hơn 
     clean: true, // xét true để mỗi lần `npm run build` thì nó sẽ lấy file bản mới thay cho bản cũ, mặc định là nó không thay thế vì chỗ này đã setup caching cho web chạy nhanh hơn  
-    publicPath: '/'
+    assetModuleFilename: "images/[hash][ext][query]",
   },
   devtool: 'source-map',
   devServer: {
