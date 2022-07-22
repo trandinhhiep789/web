@@ -3,13 +3,11 @@ import React from 'react'
 import ReactDOM from "react-dom/client";
 
 import "./styles/index.scss"
-import abc from "./images/Diamond.png"
 
 function App() {
     return (
         <div className="container">
             <h1>TMS</h1>
-            <img src={abc}/>
         </div>
     )
 }
