@@ -1,6 +1,9 @@
 const path = require("path");
+const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+
+let mode = "development";
 
 const plugins = [
   new MiniCssExtractPlugin(),
@@ -8,10 +11,18 @@ const plugins = [
     template: "./index.html"
   })
 ];
+if (process.env.NODE_ENV === "production") {
+  mode = "production"
+}
+if(process.env.WEBPACK_SERVE){
+  // We only want React Hot Reloading in serve mode
+  console.log("process.env.WEBPACK_SERVE", process.env.WEBPACK_SERVE)
+  plugins.push(new ReactRefreshWebpackPlugin());
+}
 
 module.exports = {
   entry: "./src/index.js",
-  mode: "development",
+  mode: mode,
   output: {
     path: path.join(__dirname, "dist"),
     filename: "[name].[contenthash].js", // setup caching cho web chạy nhanh hơn 
@@ -35,7 +46,7 @@ module.exports = {
         use: ["babel-loader"]                       
       }, 
       {
-        test: /\.s?css$/i,
+        test: /\.(s[ac]|c)ss$/i,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
