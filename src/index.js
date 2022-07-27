@@ -1,24 +1,16 @@
-import React from 'react' 
-// import ReactDOM from 'react-dom'
-import ReactDOM from "react-dom/client";
-import Abc from './Abc';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { Provider } from 'react-redux'
+import App from './view/app'
 
-import "./styles/index.scss"
+import { store } from './store/store'
 
-function App() {
-    return (
-        <div className="container">
-            <h1>TMS</h1>
-            <Abc/>
-        </div>
-    )
-}
-
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
+import './assets/styles/index.scss'
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-    <React.StrictMode>
+  <React.StrictMode>
+    <Provider store={store}>
       <App />
-    </React.StrictMode>
-);
-
+    </Provider>
+  </React.StrictMode>
+)

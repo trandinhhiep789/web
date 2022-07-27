@@ -1,0 +1,78 @@
+{
+  "menuItem": {
+    "dashboard__title": "Dashboard",
+    "dashboard__subMenu": {},
+
+    "task__title": "Task",
+    "task__subMenu": {
+      "task__child__1__title": "Internal mailbox",
+      "task__child__1__subMenu": {},
+
+      "task__child__2__title": "Calendar",
+      "task__child__2__subMenu": {
+        "task__child__2.1__title": "Work schedule management",
+        "task__child__2.1__subMenu": {}
+      },
+
+      "task__child__3__title": "The job needs support",
+      "task__child__3__subMenu": {},
+
+      "task__child__4__title": "Notify",
+      "task__child__4__subMenu": {
+        "task__child__4.1__title": "View announcements",
+        "task__child__4.1__subMenu": {},
+
+        "task__child__4.2__title": "Manage notifications",
+        "task__child__4.2__subMenu": {}
+      }
+    },
+
+    "news__title": "News",
+    "news__subMenu": {
+      "news__child__1__title": "Calendar",
+      "news__child__1__subMenu": {},
+
+      "news__child__2__title": "Project management",
+      "news__child__2__subMenu": {},
+
+      "news__child__3__title": "Electronic vouchers",
+      "news__child__3__subMenu": {}
+    },
+
+    "humanResource__title": "Human Resource",
+    "humanResource__subMenu": {},
+
+    "cms__title": "CMS",
+    "cms__subMenu": {},
+
+    "calendar__title": "Calendar",
+    "calendar__subMenu": {},
+
+    "docs__title": "Documentation",
+    "docs__subMenu": {},
+
+    "elearning__title": "Elearning",
+    "elearning__subMenu": {},
+
+    "category__title": "Category",
+    "category__subMenu": {},
+
+    "system__title": "System",
+    "system__subMenu": {},
+
+    "feedback__title": "Feedback",
+    "feedback__subMenu": {},
+
+    "users__title": "User",
+    "users__subMenu": {},
+
+    "folder__title": "Folder",
+    "folder__subMenu": {},
+
+    "androi__title": "Androi",
+    "androi__subMenu": {},
+
+    "ios__title": "Ios",
+    "ios__subMenu": {}
+  }
+}

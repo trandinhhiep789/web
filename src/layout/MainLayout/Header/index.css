@@ -1,0 +1,78 @@
+.headerMainMenuLeft {
+  background-color: #0b284a;
+  padding: 10px;
+  margin-left: 52px;
+  box-shadow: 0px 3px 41px 0px #488bd82e;
+
+  height: 52px;
+}
+
+.headerMainMenuLeft--dflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerMainMenuLeft__listItem {
+  display: flex;
+}
+
+.headerMainMenuLeft__listItem__item--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.headerMainMenuLeft__listItem__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #9dabb8;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.headerMainMenuLeft__listItem__item:hover {
+  color: #fff;
+}
+
+.logo_eoffice {
+  width: 90px;
+}
+
+/* .ant-dropdown-menu {
+  background-color: #496484;
+}
+
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+  color: #fff;
+}
+
+.ant-dropdown-menu-item:hover,
+.ant-dropdown-menu-submenu-title:hover {
+  background-color: #f5f5f530;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  color: #fff;
+  padding: 7px 10px;
+}
+
+.ant-collapse-ghost > .ant-collapse-item > .ant-collapse-content {
+  background-color: #3e597a;
+}
+
+.ant-collapse-ghost > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+  padding: 10px 17px;
+  color: #fff;
+} */
+
+/* Mobie */
+@media (max-width: 740px) {
+  .logo_eoffice {
+    display: none;
+  }
+}

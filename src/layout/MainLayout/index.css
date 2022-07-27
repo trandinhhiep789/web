@@ -1,0 +1,127 @@
+.dashboard {
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.dashboard__header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.dashboard--dflex {
+  display: flex;
+  width: 100%;
+  margin-top: 52px;
+}
+
+.dashboard__mainMenuLeft__div {
+  position: fixed;
+  top: 52px;
+  left: 0;
+
+  z-index: 999;
+  background-color: #fff;
+}
+.dashboard__mainMenuLeft__div__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #03162733;
+
+  display: none;
+  z-index: 100;
+}
+.dashboard__mainMenuLeft__div:hover + .dashboard__mainMenuLeft__div__overlay {
+  display: block;
+}
+
+.mainMenuLeft {
+  height: 100vh;
+  overflow: hidden;
+  transition: all 0.5;
+  padding-bottom: 250px;
+}
+.mainMenuLeft:hover {
+  overflow: auto;
+}
+
+.dashboard__mainMenuLeft {
+  height: 100vh;
+  box-shadow: 3px 0px 41px 0px #488bd82e;
+  width: 75px;
+}
+
+.dashboard__mainMenuLeft--hover {
+  height: 100vh;
+  box-shadow: 3px 0px 41px 0px #488bd82e;
+  width: 75px;
+  transition: all 0.25s;
+}
+
+.mainMenuLeftNhatCuong__item__content--show {
+  display: none;
+}
+.mainMenuLeftNhatCuong__item__content {
+  display: none;
+}
+
+.dashboard__mainMenuLeft:hover {
+  width: 215px;
+}
+.dashboard__mainMenuLeft:hover .mainMenuLeftNhatCuong__item--center {
+  display: flex;
+  cursor: pointer;
+}
+.dashboard__mainMenuLeft:hover .mainMenuLeftNhatCuong__item__iconDrop {
+  transform: rotate(90deg);
+  top: 35%;
+}
+.dashboard__mainMenuLeft:hover .mainMenuLeftNhatCuong__item__content--show {
+  display: block;
+}
+.dashboard__mainMenuLeft:hover .mainMenuLeftNhatCuong__item__content {
+  display: block;
+}
+
+.dashboard__mainMenuLeft--iconMenu {
+  z-index: 10;
+  position: fixed !important;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+
+  background-color: #031627;
+  color: white;
+  padding: 11px 0;
+  margin-top: -52px;
+  font-size: 20px;
+}
+
+.dashboard__contentRight {
+  min-height: 100vh;
+  width: 100%;
+  margin-left: 80px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+/* Mobie */
+@media (max-width: 740px) {
+  /* .dashboard__mainMenuLeft {
+      display: none;
+    }
+    .dashboard__mainMenuLeft--hover {
+      display: none;
+    }
+    .dashboard__mainMenuLeft--iconMenu:hover + .dashboard__mainMenuLeft--hover {
+      display: block;
+    }
+    .dashboard__mainMenuLeft--iconMenu:hover + .dashboard__mainMenuLeft {
+      display: block;
+    } */
+}

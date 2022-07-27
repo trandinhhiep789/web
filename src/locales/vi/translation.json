@@ -1,0 +1,78 @@
+{
+  "menuItem": {
+    "dashboard__title": "VP điện tử",
+    "dashboard__subMenu": {},
+
+    "task__title": "Công việc",
+    "task__subMenu": {
+      "task__child__1__title": "Hộp thư nội bộ",
+      "task__child__1__subMenu": {},
+
+      "task__child__2__title": "Lịch làm việc",
+      "task__child__2__subMenu": {
+        "task__child__2.1__title": "Quản lý lịch làm việc",
+        "task__child__2.1__subMenu": {}
+      },
+
+      "task__child__3__title": "Công việc cần hỗ trợ",
+      "task__child__3__subMenu": {},
+
+      "task__child__4__title": "Thông báo",
+      "task__child__4__subMenu": {
+        "task__child__4.1__title": "Xem thông báo",
+        "task__child__4.1__subMenu": {},
+
+        "task__child__4.2__title": "Quản lý thông báo",
+        "task__child__4.2__subMenu": {}
+      }
+    },
+
+    "news__title": "Tin tức",
+    "news__subMenu": {
+      "news__child__1__title": "Lịch làm việc",
+      "news__child__1__subMenu": {},
+
+      "news__child__2__title": "Quản lý dự án",
+      "news__child__2__subMenu": {},
+
+      "news__child__3__title": "Quản lý dự án",
+      "news__child__3__subMenu": {}
+    },
+
+    "humanResource__title": "Nhân sự",
+    "humanResource__subMenu": {},
+
+    "cms__title": "CMS",
+    "cms__subMenu": {},
+
+    "calendar__title": "Lịch họp",
+    "calendar__subMenu": {},
+
+    "docs__title": "Tài liệu",
+    "docs__subMenu": {},
+
+    "elearning__title": "Elearning",
+    "elearning__subMenu": {},
+
+    "category__title": "Danh mục",
+    "category__subMenu": {},
+
+    "system__title": "Hệ thống",
+    "system__subMenu": {},
+
+    "feedback__title": "Góp ý",
+    "feedback__subMenu": {},
+
+    "users__title": "Người dùng",
+    "users__subMenu": {},
+
+    "folder__title": "Thư mục",
+    "folder__subMenu": {},
+
+    "androi__title": "Androi",
+    "androi__subMenu": {},
+
+    "ios__title": "Ios",
+    "ios__subMenu": {}
+  }
+}
