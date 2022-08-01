@@ -33,7 +33,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     host: "dev.tms.tterpbeta.vn",
-    port: 8089,
+    port: 8099,
     hot: true,
     compress: true, 
     https: false

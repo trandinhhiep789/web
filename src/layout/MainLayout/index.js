@@ -10,9 +10,24 @@ import './index.css'
 // layout
 import HeaderMainMenuLeft from './Header'
 import MainMenuLeftNhatCuong from './MainMenu'
+import TableGird from '~/components/TableGird'
+import Tabs from '~/components/Tabs'
+
+import {
+  SearchElementList,
+  SearchMLObjectDefinition,
+  DataGridColumnList,
+  BackLink,
+  AddLink,
+  PagePath,
+  IDSelectColumnName,
+  PKColumnName,
+  gridDataSource
+} from './Test'
 
 const Dashboard = memo(() => {
   const [isExpandWidthMenuLeft, setIsExpandWidthMenuLeft] = useState(false)
+  // const [gridDataSource, setGridDataSource] = useState([])
 
   return (
     <div className="dashboard">
@@ -43,11 +58,29 @@ const Dashboard = memo(() => {
 
         <div className="dashboard__mainMenuLeft__div__overlay"></div>
         {/* child component will appear here */}
-        
+
         <div className="dashboard__contentRight">
           <AppPath />
           <Divider />
           <Outlet />
+
+          <TableGird
+            listColumn={DataGridColumnList}
+            dataSource={gridDataSource}
+            AddLink={AddLink}
+            IDSelectColumnName={IDSelectColumnName}
+            PKColumnName={PKColumnName}
+            // onDeleteClick={this.handleDelete.bind(this)}
+            IsDelete={true}
+            IsAutoPaging={true}
+            RowsPerPage={10}
+            // RequirePermission={SERVICEAGREEMENT_VIEW}
+            // DeletePermission={SERVICEAGREEMENT_DELETE}
+            // ExportPermission={SERVICEAGREEMENT_EXPORT}
+            IsExportFile={false}
+            IsImportFile={false}
+          />
+          <Tabs/>
         </div>
       </div>
     </div>
