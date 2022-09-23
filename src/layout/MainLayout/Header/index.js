@@ -2,14 +2,11 @@ import React, { memo } from 'react'
 import './index.css'
 
 import { Menu, Collapse, Switch } from 'antd'
-import { useTranslation } from 'react-i18next'
 import ProfileBox from '../Profilebox/ProfileBox'
 
 import logo from '../../../assets/images/image-dasboard/eoffice-logo.png'
 
 const HeaderMainMenuLeft = memo(function HeaderMainMenuLeft(props) {
-  const { i18n } = useTranslation()
-
   const userAccount = (
     <Menu>
       <div style={{ padding: '10px' }}>
@@ -22,13 +19,6 @@ const HeaderMainMenuLeft = memo(function HeaderMainMenuLeft(props) {
     </Menu>
   )
 
-  const handleChangeLangChange = value => {
-    if (value) {
-      return i18n.changeLanguage('en')
-    }
-    i18n.changeLanguage('vi')
-  }
-
   return (
     <div className="headerMainMenuLeft">
       <div className="headerMainMenuLeft--dflex">
@@ -38,11 +28,6 @@ const HeaderMainMenuLeft = memo(function HeaderMainMenuLeft(props) {
         <div className="headerMainMenuLeft__listItem">
           <div className="headerMainMenuLeft__listItem__item"></div>
           <div className="headerMainMenuLeft__listItem__item"></div>
-          &emsp;
-          <div className="headerMainMenuLeft__listItem__item--center">
-            <Switch checkedChildren="English" unCheckedChildren="Tiếng việt" onChange={handleChangeLangChange} />
-          </div>
-          &ensp;
           <div className="headerMainMenuLeft__listItem__item--center">
             <ProfileBox />
           </div>

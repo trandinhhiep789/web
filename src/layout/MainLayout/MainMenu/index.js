@@ -36,7 +36,7 @@ const MainMenuLeft = memo(function MainMenuLeft(props) {
     <div>
       {MenuItem &&
         MenuItem.map((menu, i) => (
-          <div className="mainMenuLeft" key={i}>
+          <div className="mainMenuLeftChild" key={i}>
             {menu.SubMenu.length > 0 ? (
               <div className="mainMenuLeft__item" onClick={() => toggle(i)}>
                 <div className="mainMenuLeft__item--center">
@@ -72,11 +72,7 @@ const MainMenuLeft = memo(function MainMenuLeft(props) {
                 </div>
               </NavLink>
             )}
-            <div
-              className={
-                selected == i ? 'mainMenuLeft__item__content--show' : 'mainMenuLeft__item__content'
-              }
-            >
+            <div className={selected == i ? 'mainMenuLeft__item__content--show' : 'mainMenuLeft__item__content'}>
               {menu.SubMenu.map((sub, i) => {
                 return (
                   <div key={i}>

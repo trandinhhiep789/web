@@ -9,21 +9,7 @@ import AppPath from './AppPath/AppPath'
 import './index.css'
 // layout
 import HeaderMainMenuLeft from './Header'
-import MainMenuLeftNhatCuong from './MainMenu'
-import TableGird from '~/components/TableGird'
-import Tabs from '~/components/Tabs'
-
-import {
-  SearchElementList,
-  SearchMLObjectDefinition,
-  DataGridColumnList,
-  BackLink,
-  AddLink,
-  PagePath,
-  IDSelectColumnName,
-  PKColumnName,
-  gridDataSource
-} from './Test'
+import MainMenuLeft from './MainMenu'
 
 const Dashboard = memo(() => {
   const [isExpandWidthMenuLeft, setIsExpandWidthMenuLeft] = useState(false)
@@ -51,7 +37,7 @@ const Dashboard = memo(() => {
               </div>
             </div>
             <div className="mainMenuLeft">
-              <MainMenuLeftNhatCuong setIsExpandWidthMenuLeft={setIsExpandWidthMenuLeft} />
+              <MainMenuLeft setIsExpandWidthMenuLeft={setIsExpandWidthMenuLeft} />
             </div>
           </div>
         </div>
@@ -63,24 +49,6 @@ const Dashboard = memo(() => {
           <AppPath />
           <Divider />
           <Outlet />
-
-          <TableGird
-            listColumn={DataGridColumnList}
-            dataSource={gridDataSource}
-            AddLink={AddLink}
-            IDSelectColumnName={IDSelectColumnName}
-            PKColumnName={PKColumnName}
-            // onDeleteClick={this.handleDelete.bind(this)}
-            IsDelete={true}
-            IsAutoPaging={true}
-            RowsPerPage={10}
-            // RequirePermission={SERVICEAGREEMENT_VIEW}
-            // DeletePermission={SERVICEAGREEMENT_DELETE}
-            // ExportPermission={SERVICEAGREEMENT_EXPORT}
-            IsExportFile={false}
-            IsImportFile={false}
-          />
-          <Tabs/>
         </div>
       </div>
     </div>

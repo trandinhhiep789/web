@@ -59,28 +59,28 @@
   transition: all 0.25s;
 }
 
-.mainMenuLeftNhatCuong__item__content--show {
+.mainMenuLeft__item__content--show {
   display: none;
 }
-.mainMenuLeftNhatCuong__item__content {
+.mainMenuLeft__item__content {
   display: none;
 }
 
 .dashboard__mainMenuLeft:hover {
   width: 215px;
 }
-.dashboard__mainMenuLeft:hover .mainMenuLeftNhatCuong__item--center {
+.dashboard__mainMenuLeft:hover .mainMenuLeft__item--center {
   display: flex;
   cursor: pointer;
 }
-.dashboard__mainMenuLeft:hover .mainMenuLeftNhatCuong__item__iconDrop {
+.dashboard__mainMenuLeft:hover .mainMenuLeft__item__iconDrop {
   transform: rotate(90deg);
   top: 35%;
 }
-.dashboard__mainMenuLeft:hover .mainMenuLeftNhatCuong__item__content--show {
+.dashboard__mainMenuLeft:hover .mainMenuLeft__item__content--show {
   display: block;
 }
-.dashboard__mainMenuLeft:hover .mainMenuLeftNhatCuong__item__content {
+.dashboard__mainMenuLeft:hover .mainMenuLeft__item__content {
   display: block;
 }
 
